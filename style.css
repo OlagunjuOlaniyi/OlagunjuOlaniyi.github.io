@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*------ all buttons ------*/
@@ -56,6 +56,10 @@ body {
   height: 100vh;
 }
 
+#hero .carousel-item a {
+		margin: 5px;
+	}
+
 .carousel-item .carousel-caption {
 	top: 35vh;
 }
@@ -74,9 +78,17 @@ body {
 	height: 30px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 	.carousel-item .carousel-caption {
-		top: 25vh;
+		top: 20vh;
+	}
+
+	#hero .carousel-item h1 {
+		font-size: 33px;
+	}
+
+	#hero .carousel-item a {
+		padding: 5px 15px;
 	}
 }
 
@@ -173,10 +185,6 @@ body {
 	background-color: #ff3333;
 }
 
-.element-item {
-
-}
-
 .gallery-item {
 	overflow: hidden;
 	border-right: 3px solid #ffffff;
@@ -184,12 +192,18 @@ body {
 }
 
 .gallery-item img {
-	width: 100%;
 	transition: all ease-in-out 0.4s;
 }
 
 .gallery-item img:hover {
 	transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+	#portfolio-container button {
+		padding: 5px 15px;
+		margin-top: 2px;
+	}
 }
 
 /*------- flip section -------- */
@@ -234,11 +248,6 @@ body {
 	width: 7%;
 	border: 2px solid #ff3333;
 	border-radius: 10px;
-}
-
-#contactContainer {
-	text-align: center;
-	padding: 30px 0;
 }
 
 .contactIcon i {

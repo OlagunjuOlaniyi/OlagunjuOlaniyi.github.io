@@ -1,11 +1,7 @@
-$(document).ready(function() {
-// Initiate venobox lightbox
-  $(document).ready(function() {
-    $('.venobox').venobox();
-  });
+!(function($) {
+  "use strict";
 
-
-	// Menu list isotope and filter
+// Menu list isotope and filter
   $(window).on('load', function() {
     var menuIsotope = $('.menu-container').isotope({
       itemSelector: '.element-item',
@@ -22,5 +18,11 @@ $(document).ready(function() {
     });
   });
 
-});
+  // Initiate venobox lightbox
+  $(document).ready(function() {
+    $('.venobox').venobox();
+  });
+
+
+})(jQuery);
 
